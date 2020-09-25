@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <title>Calculator</title>
+    <script type="text/javascript" src="calculator.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Standard</span>
+      </nav>
+      <form name="view">
+        <input class="form-control form-control-lg my-3" name="output" type="text" placeholder="">
+      </form>
+      <div class="row">
+        <div class="col-sm-2"><input type="button" class="btn" onclick="insert(7)" value="7"></div>
+        <div class="col-sm-2"><input type="button" class="btn" onclick="insert(8)" value="8"></div>
+        <div class="col-sm-2"><input type="button" class="btn" onclick="insert(9)" value="9"></div>
+        <div class="col-sm-2"><input type="button" class="btn symbol" onclick="back()" value="C"></div>
+        <div class="col-sm-2"><input type="button" class="btn ac" onclick="clean()" value="AC"></div>
+      </div>
+      <div class="row tall">
+        <div class="col-sm-2">
+          <div class="row"><input type="button" class="btn" onclick="insert(4)" value="4"></div>
+          <div class="row"><input type="button" class="btn special" onclick="insert(1)" value="1"></div>
+        </div>
+        <div class="col-sm-2">
+          <div class="row"><input type="button" class="btn" onclick="insert(5)" value="5"></div>
+          <div class="row"><input type="button" class="btn special" onclick="insert(2)" value="2"></div>
+        </div>
+        <div class="col-sm-2">
+          <div class="row"><input type="button" class="btn" onclick="insert(6)" value="6"></div>
+          <div class="row"><input type="button" class="btn special" onclick="insert(3)" value="3"></div>
+        </div>
+        <div class="col-sm-2"><input type="button" class="btn btn-tall symbol" onclick="insert('+')" value="+"></div>
+        <div class="col-sm-2">
+          <div class="row"><input type="button" class="btn symbol" onclick="insert('*')" value="x"></div>
+          <div class="row"><input type="button" class="btn special symbol" onclick="insert('-')" value="-"></div>
+        </div>
+      </div>
+<!--       <div class="row">
+        <div class="col-sm-2"><button type="button" class="btn btn-light">Light</button></div>
+        <div class="col-sm-2"><button type="button" class="btn btn-light">Light</button></div>
+        <div class="col-sm-2"><button type="button" class="btn btn-light">Light</button></div>
+        <div class="col-sm-2"><button type="button" class="btn btn-light">Light</button></div>
+        <div class="col-sm-2"><button type="button" class="btn btn-light">Light</button></div>
+      </div> -->
+      <div class="row wide">
+        <div class="col-sm-4 wide"><input type="button" class="btn wide" onclick="insert(0)" value="0"></div>
+        <!-- <div class="col-sm-2"><button type="button" class="btn">Light</button></div> -->
+        <div class="col-sm-2"><input type="button" class="btn ml-2 symbol" onclick="insert('.')" value="."></div>
+        <div class="col-sm-2"><input type="button" class="btn ml-2 equal" onclick="equal()" value="="></div>
+        <div class="col-sm-2"><input type="button" class="btn ml-2 symbol" onclick="insert('/')" value="÷"></div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="calculator.js"></script> -->
+  </body>
+</html>
